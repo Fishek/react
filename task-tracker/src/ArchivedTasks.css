@@ -1,0 +1,76 @@
+.archivedTasks-container-wrapper {
+  display: flex;
+  width: 430px;
+  position: relative;
+  height: 80%;
+  margin-left: auto;
+  top: 19%;
+  transition: right 0.3s ease-in-out;
+}
+
+.archivedTasks-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.archivedTasks-button {
+  width: 30px;
+  height: 160px;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #0c2d48;
+  font-weight: bold;
+  background-color: #2ec0ac;
+  border: none;
+  cursor: pointer;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.archivedTasks-window {
+  height: 100%;
+  width: 400px;
+  background-color: #2196f3;
+  overflow-y: auto;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.archivedTasks-window-tasks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.archivedTasks-window-tasks {
+  background-color: #2ec0ac;
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media screen and (max-width: 1470px) {
+  .archivedTasks-container-wrapper {
+    position: fixed;
+    width: 430px;
+    bottom: 0;
+    
+  }
+}

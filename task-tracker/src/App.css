@@ -1,0 +1,157 @@
+.App {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow-x: hidden;
+  background-color: #0C2D48;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 10rem;
+  width: 80%;
+  max-width: 1100px;
+  
+}
+
+.input-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.input-header {
+  color: #d3ebf3;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.input-form{
+  display: flex;
+  
+}
+
+.input-task {
+  width: 300px; /* Set the width of the input */
+  padding: 10px; /* Set padding for the input */
+  font-size: 16px; /* Set font size */
+  border: 1px solid #ccc; /* Set border style and color */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  transition: border-color 0.3s ease; /* Add a smooth transition for the border color */
+  background-color: #BCECE0;
+  color: #0C2D48;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* Style the input on focus */
+.input-task:focus {
+  border-color: #2196F3; /* Change border color on focus */
+  outline: none; /* Remove the default focus outline */
+}
+
+.input-task-button {
+  width: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  border:1px solid #ccc ;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  background-color: #2E8BC0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.input-task-button:hover {
+  background-color: #0C2D48;
+}
+
+.tasks-container {
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+.tasks-task{
+  height: 100px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: break-word;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 22px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.checkbox-input {
+  
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #2196F3;
+}
+
+.task-button {
+  width: 50px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  border:1px solid #ccc ;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  background-color: #2E8BC0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.task-button:hover {
+  background-color: #0C2D48;
+}
+
+@media screen and (max-width: 500px) {
+ 
+
+  .wrapper {
+    position: absolute;
+   
+  }
+
+  .tasks-task {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+
+  .App {
+    justify-content: center;
+    
+  
+  }
+
+  .input-form{
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .wrapper {
+    left:0;
+    text-align: center;
+  }
+}
+
